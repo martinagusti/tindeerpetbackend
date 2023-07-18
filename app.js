@@ -17,8 +17,9 @@ app.use(express.static("public"));
 
 const io = new Server(server, {
   cors: {
-    /* origin: "http://localhost:5173", */
-    origin: "https://tinderpet23.netlify.app",
+    origin: "http://localhost:5173",
+    /* origin: "https://tinderpet23.netlify.app" */
+    origin: "",
   },
 });
 
